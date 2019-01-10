@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { Page404Component } from './core/page-404/page404.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/landing/login', pathMatch: 'full' },
-  { path: 'page-not-found', component: PageNotFoundComponent },
-  { path: '**', redirectTo: 'page-not-found' }
+  { path: 'not-found', component: Page404Component },
+  { path: '**', redirectTo: 'not-found' }
 ];
-// yuval
-//ruslan
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

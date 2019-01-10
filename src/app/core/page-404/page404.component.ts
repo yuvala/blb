@@ -2,13 +2,13 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute , Router  } from "@angular/router";
 
 @Component({
-    selector: 'app-not-found',
-    templateUrl: './page-not-found.component.html',
+    selector: 'app-page404',
+    templateUrl: './page404.component.html',
     styles: []
 
 })
 
-export class PageNotFoundComponent implements OnInit {
+export class Page404Component implements OnInit {
     pathName: string;
   
     constructor(private route: ActivatedRoute, private router: Router) {}
