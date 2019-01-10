@@ -13,6 +13,7 @@ const routes: Routes = [
         { path: 'charts/:id', component: AnalyticsChartsComponent },
         { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
     ]},
+    ///ruslan 2
 //   {
 //     path: '',
 //     component: LoginComponent,
