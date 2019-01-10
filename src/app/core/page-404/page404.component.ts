@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
     selector: 'app-page404',
@@ -9,10 +8,10 @@ import { ActivatedRoute, Router } from "@angular/router";
 
 export class Page404Component implements OnInit {
     pathName: string;
-  
-    constructor(private route: ActivatedRoute, private router: Router) {}
-  
+
+    // constructor(private route: ActivatedRoute, private router: Router) {}
+    constructor() { }
     ngOnInit() {
         this.pathName = "Login";
     }
-  }
+}
