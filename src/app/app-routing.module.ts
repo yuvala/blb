@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'page-not-found', component: PageNotFoundComponent },
   { path: '**', redirectTo: 'page-not-found' }
 ];
-
+// yuval
+//ruslan
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
