@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit() {
+  generateError() {
+    let data: { value: string } = {value: ''};
+    data = undefined;
+    console.log(data.value);
   }
+  ngOnInit() {}
 
 }
