@@ -1,8 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { LandingModule } from './modules/landing/landing.module';
+import { QuentryModule } from './modules/quentry/quentry.module';
+
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -10,6 +16,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    LandingModule,
+    QuentryModule,
+    CoreModule,
     AppRoutingModule
   ],
   providers: [],
