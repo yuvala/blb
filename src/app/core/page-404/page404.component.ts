@@ -8,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 
 export class Page404Component implements OnInit {
     pathName: string;
-
+    
     // constructor(private route: ActivatedRoute, private router: Router) {}
     constructor() { }
     ngOnInit() {
