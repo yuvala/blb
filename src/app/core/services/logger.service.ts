@@ -16,7 +16,7 @@ export class LoggerService extends ErrorHandler {
             console.log('An error occurred:', error.message);
         }
         console.log(error);
-        console.log('***********************************\n\n\n');
+        console.log('************************************\n\n\n');
         // setTimeout(() => {
         //     // console.clear();
         //     console.log(error);
