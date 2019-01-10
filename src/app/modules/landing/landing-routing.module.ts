@@ -7,7 +7,7 @@ import { RegistrationComponent } from './pages/registration/registration.compone
 import { RecoveryComponent } from './pages/recovery/recovery.component';
 
 const routes: Routes = [
-    //{ path: '', redirectTo: '/landing/login', pathMatch: 'full' },
+   // { path: '', redirectTo: '/landing/login', pathMatch: 'full' },
     { path: 'landing', children: [
         { path: 'login', component: LoginComponent },
         { path: 'registration', component: RegistrationComponent },
