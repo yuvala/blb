@@ -14,7 +14,7 @@ import { Page404Component } from './page-404/page404.component';
         CommonModule
     ],
     providers: [
-        //   { provide: HTTP_INTERCEPTORS, useClass: HttpTokenInterceptor, multi: true },
+        //  { provide: HTTP_INTERCEPTORS, useClass: HttpTokenInterceptor, multi: true },
         ApiService,
         { provide: ErrorHandler, useClass: LoggerService },
     ],
