@@ -4,8 +4,8 @@ import { Page404Component } from './core/page-404/page404.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/landing/login', pathMatch: 'full' },
-  { path: 'not-found', component: Page404Component },
-  { path: '**', redirectTo: 'not-found' }
+  { path: 'page-404', component: Page404Component },
+  { path: '**', redirectTo: 'page-404' }
 ];
 
 @NgModule({
