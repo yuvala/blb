@@ -1,0 +1,26 @@
+@mixin flex {
+    display: flex;
+}
+%flex {
+    @include flex;
+}
+.flex {
+    @include flex;
+}
+@mixin justify-content--space-between {
+    justify-content: space-between;
+}
+%justify-content--space-between {
+    @include justify-content--space-between;
+}
+.justify-content--space-between {
+    @include justify-content--space-between;
+}
+@mixin flex-name1($workflow) {
+    @if ($workflow=='true') {
+        color: yellow;
+    } @else {
+        color: grey;
+    }
+    
+}
