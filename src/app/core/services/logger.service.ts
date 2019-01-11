@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ErrorHandler } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ApiService } from './api.service';
 // TODO: Remove pseudoDialog
 export const pseudoDialog = (message: string) => {
     const element = document.createElement('div');
@@ -28,7 +29,7 @@ export const pseudoDialog = (message: string) => {
 };
 @Injectable()
 export class LoggerService extends ErrorHandler {
-    constructor() { super(); }
+    constructor(private api: ApiService) { super(); }
     handleError(error) {
         if (error instanceof HttpErrorResponse) {
             // Backend returns unsuccessful response codes such as 404, 500 etc.
@@ -36,10 +37,13 @@ export class LoggerService extends ErrorHandler {
             console.log('Response body:', error.message);
         } else if (error && error.message) {
             // A client-side or network error occurred.
-            // alert(error.message);
             pseudoDialog(error.message);
             console.log('An error occurred:', error.message);
             console.log(error.stack);
+            this.api.post('logger', {
+                message: error.message,
+                stack: error.stack
+            }).subscribe(() => {});
         } else {
             // Unknow error
             console.log('Unknow error.');

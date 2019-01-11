@@ -11,6 +11,22 @@
   <a [routerLink]="['/analytics222']" routerLinkActive="active">Wrong page - 404</a>
 </div>
 <div>
+  <div>
+    <div>
+      <label>
+        <input type="radio" [(ngModel)]="isHobbit" [value]="true" />
+        <span>Login as Frodo</span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" [(ngModel)]="isHobbit" [value]="false" />
+        <span>Login as Saruman</span>
+      </label>
+    </div>
+  </div>
+  <button (click)="login()">Login</button>
+</div>
+<div>
   <p class="aasa">Generate error for LoggerSevice check</p>
   <button (click)="generateError()">Error</button>
 </div>
