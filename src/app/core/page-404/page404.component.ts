@@ -1,4 +1,4 @@
-import { Component,OnInit } from   '@angular/core'
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,10 +9,10 @@ import { Component,OnInit } from   '@angular/core'
 
 export class Page404Component implements OnInit {
     pathName: string;
-    
+
     // constructor(private route: ActivatedRoute, private router: Router) {}
     constructor() { }
     ngOnInit() {
-        this.pathName = "Login";
+        this.pathName = 'Login';
     }
 }

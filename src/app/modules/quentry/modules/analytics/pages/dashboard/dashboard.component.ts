@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dashboard.component.html'
 })
 export class AnalyticsDashboardComponent implements OnInit {
-
+  theme = 'dark';
   constructor() { }
 
   ngOnInit() {
