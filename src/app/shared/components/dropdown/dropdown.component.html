@@ -1,0 +1,18 @@
+<div class="dropdown-container">
+    <select [(ngModel)]="current"
+             (change)="select($event.target.value)">
+        <option *ngFor="let item of list" >{{item}}</option>
+    </select>
+    <!-- 
+    <div class="dropdown-toggle-container"></div>
+    <div class="dropdown-options-container">
+        <div class="dropdown-options-list-container">
+            <div class="dropdown-item-container"
+                *ngFor="let item of list; let i = index"
+                (click)="select(i)">
+                <div class="ellipsis">{{item}}</div>
+            </div>            
+        </div>
+    </div>
+    -->
+</div>

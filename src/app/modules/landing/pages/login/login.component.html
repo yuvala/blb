@@ -14,16 +14,20 @@
   <div>
     <div>
       <label>
-        <input type="radio" [(ngModel)]="isHobbit" [value]="true" />
+        <input type="radio" [(ngModel)]="users.current" [value]="'Frodo Baggins'" />
         <span>Login as Frodo</span>
       </label>
       <br>
       <label>
-        <input type="radio" [(ngModel)]="isHobbit" [value]="false" />
+        <input type="radio" [(ngModel)]="users.current" [value]="'Saruman'" />
         <span>Login as Saruman</span>
       </label>
     </div>
+    <div>... or Login as:
+      <app-dropdown [options]="{current: users.current, list: users.list}" (whenChange)="userSelect($event)"></app-dropdown>
+    </div>
   </div>
+  <br>
   <button (click)="login()">Login</button>
 </div>
 <div>
