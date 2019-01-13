@@ -1,4 +1,5 @@
-<p>
+
+<!-- <p>
   AnalyticsChartsComponent works!
 </p>
 <div>
@@ -6,4 +7,16 @@
 </div>
 <div>
   <a [routerLink]="['/analytics/dashboard']" routerLinkActive="active">Back to dashboard</a>
+</div> -->
+<div class="chart-container">
+    <div class="main-pane">
+      <div></div>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="right-pane">ss
+        <router-outlet name="rightPane"></router-outlet>
+    </div>
+
+
 </div>
+

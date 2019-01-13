@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { AnalyticsRoutingModule } from './analytics-routing.module';
 import { SharedComponent } from './shared/shared.component';
 import { AnalyticsHeaderComponent } from './shared/analytics-header/analytics-header.component';
+import { AnalyticsFiltersComponent } from './pages/filters/filters.component';
+import { RightPaneComponent } from './shared/layouts/right-pane/right-pane.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,7 @@ import { AnalyticsHeaderComponent } from './shared/analytics-header/analytics-he
     AnalyticsRoutingModule,
     FormsModule,
     CommonModule
-   
+
   ],
   declarations: [
     AnalyticsMainComponent,
@@ -26,6 +28,8 @@ import { AnalyticsHeaderComponent } from './shared/analytics-header/analytics-he
     AnalyticsChartsComponent,
     SharedComponent,
     AnalyticsHeaderComponent,
+    AnalyticsFiltersComponent,
+    RightPaneComponent
 
   ],
   providers: [

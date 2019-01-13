@@ -1,20 +1,20 @@
 <div class="analytics-container" >
-    <div class="nav-bar" style="flex-grow:0; background-color: rgb(49, 49, 49); padding: 10px;display:flex;justify-content:space-between;color:white">
-        <div style="display:flex;"> 
-                <div style="margin:10px">
-                    <a [routerLink]="['/sandbox/analytics/dashboard']"  routerLinkActive="active">Dashbpoard</a>
-                </div>
-                <div style="margin:10px">
-                    <a [routerLink]="['/sandbox/analytics/charts', 'eb0b702d-7884-434a-b145-3ea5bf36d032']" [queryParams]="{graphName: 'Patient Accrual'}" routerLinkActive="active">acrual</a>
-                </div>
-               
+    <div class="nav-bar" style="flex-grow:0; background-color: rgb(49, 49, 49); padding: 10px;display:flex;justify-content:space-between;color:white;flex-grow: 0;">
+        <div style="display:flex;">
+
+            <div style="margin:10px">
+              <a [routerLink]="['/sandbox/analytics/dashboard']"  routerLinkActive="active">Dashbpoard</a>
+            </div>
+            <div style="margin:10px">
+                <a [routerLink]="['/sandbox/analytics/chart', '11111-1111-1111']" [queryParams]="{graphName: 'Animal Accrual'}" routerLinkActive="active">Acrual</a>
+            </div>
+            <div style="margin:10px">
+                <a [routerLink]="['/sandbox/analytics/chart', '22222-2222-2222']" [queryParams]="{graphName: 'Animal Gender'}" routerLinkActive="active">Gender</a>
+            </div>
         </div>
-       
         <div style="width:200px">nav Bar here!</div>
     </div>
- 
-        <router-outlet></router-outlet>  
-    
+    <router-outlet></router-outlet>
 </div>
 
 
