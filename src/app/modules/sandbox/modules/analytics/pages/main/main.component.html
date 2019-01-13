@@ -5,12 +5,17 @@
             <div style="margin:10px">
               <a [routerLink]="['/sandbox/analytics/dashboard']"  routerLinkActive="active">Dashbpoard</a>
             </div>
-            <div style="margin:10px">
+            <div (click)="selectChart(item)" *ngFor="let item of analyticsCharts" class="tab"  [ngClass]="{'tab-clicked': item.id === git}">{{ item.name }}</div>
+
+
+
+
+            <!-- <div style="margin:10px">
                 <a [routerLink]="['/sandbox/analytics/chart', '11111-1111-1111']" [queryParams]="{graphName: 'Animal Accrual'}" routerLinkActive="active">Acrual</a>
             </div>
             <div style="margin:10px">
                 <a [routerLink]="['/sandbox/analytics/chart', '22222-2222-2222']" [queryParams]="{graphName: 'Animal Gender'}" routerLinkActive="active">Gender</a>
-            </div>
+            </div> -->
         </div>
         <div style="width:200px">nav Bar here!</div>
     </div>

@@ -13,7 +13,7 @@ export class AnalyticsDashboardComponent implements OnInit {
   heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
   constructor(private router: Router) {
   console.log('ddd');
-    this.router;
+    // this.router;
   }
 
   ngOnInit() {

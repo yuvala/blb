@@ -7,10 +7,15 @@
  border:1px gray dashed;
 }
 body {
-  color:white;
+  color:rgb(202, 199, 199);
+  font-family: Arial, Helvetica, sans-serif;
 }
 a{
-  color:yellow;
+  color:white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline ;
+  }
 }
 .app-container {
   border:1px red solid;
@@ -24,7 +29,7 @@ a{
   text-align:center;
 }
 .main-container {
-  border:2px orange solid;
+ // border:2px orange solid;
   height: 100%;
  // background-color: #eeeded;
 
@@ -40,7 +45,7 @@ a{
 
 
 .dashboard-container {
-  border:1px blue solid;
+//  border:1px blue solid;
 
 }
 
@@ -50,7 +55,7 @@ a{
 
 }
 .analytics-container {
-  border:2px red dashed;
+ // border:2px red dashed;
   height:100%;
   display: flex;
   flex-direction:column;
@@ -60,7 +65,7 @@ a{
   flex-grow:1;
 }
 .patients-container {
-  border:2px gold dashed;
+ // border:2px gold dashed;
   height:100%;
   display: flex;
   flex-direction:row;
@@ -77,7 +82,7 @@ a{
   div {border:1px black solid}
 }
 .chart-container {
-  border:2px gold dashed;
+ // border:2px gold dashed;
   height:100%;
   display: flex;
   flex-direction:row;
@@ -90,4 +95,23 @@ a{
 .main-pane {
   flex-grow:1;
 }
+}
+
+.tab {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px gray solid;
+  color:gray;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px white solid;
+    color:white;
+  }
+
+   .tab-clicked {
+     background-color: black;
+     color:orange;
+   }
 }

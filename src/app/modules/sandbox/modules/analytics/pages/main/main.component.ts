@@ -10,7 +10,7 @@ export class AnalyticsMainComponent implements OnInit {
   public analyticsCharts = [];
   selectChart (item) {
     console.log('seletcChart', item);
-    this.router.navigate(['/home/analytics/chart', item.id]);
+    this.router.navigate(['/sandbox/analytics/chart', item.id]);
   }
   constructor(private router: Router, private analyticsService: AnalyticsService) {
 
