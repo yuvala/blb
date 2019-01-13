@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LandingModule } from './modules/landing/landing.module';
-import { QuentryModule } from './modules/quentry/quentry.module';
+import { SandboxModule } from './modules/sandbox/sandbox.module';
 
 import { CoreModule } from './core/core.module';
 
@@ -22,7 +22,7 @@ import { CoreModule } from './core/core.module';
     FormsModule,
     ReactiveFormsModule,
     LandingModule,
-    QuentryModule,
+    SandboxModule,
     CoreModule,
     AppRoutingModule
   ],

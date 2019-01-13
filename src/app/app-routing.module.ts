@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Page404Component } from './core/page-404/page404.component';
-import { QuentryComponent } from './modules/quentry/quentry.component';
+import { SandboxComponent } from './modules/sandbox/sandbox.component';
 
 
 // to be consider: today it is common whens   "**" redirect to home..     only in speciphic ocation its redirect to 404
@@ -11,8 +11,8 @@ export const ROOT_ROUTES: Routes = [
   // { path: '**', redirectTo: 'page-404' },
 
 
-  { path: '', redirectTo: 'quentry', pathMatch: 'full'},
-  { path: 'quentry', component: QuentryComponent}
+  { path: '', redirectTo: 'sandbox', pathMatch: 'full'},
+  { path: 'sandbox', component: SandboxComponent}
 
 ];
 

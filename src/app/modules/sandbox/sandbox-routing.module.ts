@@ -2,17 +2,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {QuentryComponent} from './quentry.component';
+import {SandboxComponent} from './sandbox.component';
 import {AsideMenuComponent} from './shared/aside-menu/aside-menu.component';
 import {AnalyticsDashboardComponent} from './modules/analytics/pages/dashboard/dashboard.component';
 import { PatientsComponent } from './modules/patients/patients.component';
 import { ApplicationsComponent } from './modules/applications/applications.component';
 
 
-export const QUENTRY_ROUTES: Routes = [
+export const SANDBOX_ROUTES: Routes = [
   {
-    path: 'quentry',
-    component: QuentryComponent,
+    path: 'sandbox',
+    component: SandboxComponent,
     children: [
       {
         path: '',
@@ -36,7 +36,7 @@ export const QUENTRY_ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(QUENTRY_ROUTES)],
+  imports: [RouterModule.forChild(SANDBOX_ROUTES)],
   exports: [RouterModule]
 })
-export class QuentryRoutingModule {}
+export class SandboxRoutingModule {}

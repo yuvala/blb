@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-quentry',
-  templateUrl: './quentry.component.html',
-  styleUrls: ['./quentry.component.scss']
+  selector: 'app-sandbox',
+  templateUrl: './sandbox.component.html',
+  styleUrls: ['./sandbox.component.scss']
 })
-export class QuentryComponent implements OnInit {
+export class SandboxComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
