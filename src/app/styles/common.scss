@@ -1,0 +1,36 @@
+@import 'normalize.scss';
+
+//temp
+
+.app-container {
+  border:1px red solid;
+  height: 100vh;
+  background-color: #cccccc;
+}
+.main-container {
+  border:2px orange solid;
+  height: 100%;
+  background-color: #eeeded;
+
+  display: flex;
+  flex-direction: row;
+
+
+}
+.app-quentry {
+  border:1px black solid;
+  background-color: pink;
+}
+
+
+.dashboard-container {
+  border:1px blue solid;
+
+}
+
+.left-pane {
+  border:1px black solid;
+  min-width: 150px;
+
+}
+//temp

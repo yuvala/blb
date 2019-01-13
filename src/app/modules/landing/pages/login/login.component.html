@@ -1,7 +1,5 @@
 <p>
   login works!
-  <!--  login works!-->
-  <!--  login works!-->
 </p>
 <div>
   <a [routerLink]="['/landing/registration']" routerLinkActive="active">Registation</a>
@@ -11,4 +9,28 @@
   <a [routerLink]="['/analytics']" routerLinkActive="active">Analytics</a>
   &nbsp;&nbsp;
   <a [routerLink]="['/analytics222']" routerLinkActive="active">Wrong page - 404</a>
+</div>
+<div>
+  <div>
+    <div>
+      <label>
+        <input type="radio" [(ngModel)]="users.current" [value]="'Frodo Baggins'" />
+        <span>Login as Frodo</span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" [(ngModel)]="users.current" [value]="'Saruman'" />
+        <span>Login as Saruman</span>
+      </label>
+    </div>
+    <div>... or Login as:
+      <app-dropdown [options]="{current: users.current, list: users.list}" (whenChange)="userSelect($event)"></app-dropdown>
+    </div>
+  </div>
+  <br>
+  <button (click)="login()">Login</button>
+</div>
+<div>
+  <p class="aasa">Generate error for LoggerSevice check</p>
+  <button (click)="generateError()">Error</button>
 </div>

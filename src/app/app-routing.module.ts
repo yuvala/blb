@@ -1,15 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { Page404Component } from './core/page-404/page404.component';
+import { QuentryComponent } from './modules/quentry/quentry.component';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/landing/login', pathMatch: 'full' },
-  { path: 'page-not-found', component: PageNotFoundComponent },
-  { path: '**', redirectTo: 'page-not-found' }
+
+// to be consider: today it is common whens   "**" redirect to home..     only in speciphic ocation its redirect to 404
+export const ROOT_ROUTES: Routes = [
+  // { path: '', redirectTo: '/landing/login', pathMatch: 'full' },
+  // { path: 'page-404', component: Page404Component },
+  // { path: '**', redirectTo: 'page-404' },
+
+
+  { path: '', redirectTo: 'quentry', pathMatch: 'full'},
+  { path: 'quentry', component: QuentryComponent}
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ROOT_ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
