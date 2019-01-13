@@ -1,6 +1,6 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
 import { AnalyticsMainComponent } from './pages/main/main.component';
 import { AnalyticsDashboardComponent } from './pages/dashboard/dashboard.component';
 import { AnalyticsChartsComponent } from './pages/charts/charts.component';
@@ -16,7 +16,9 @@ import { AnalyticsHeaderComponent } from './shared/analytics-header/analytics-he
   imports: [
     // SharedModule,
     AnalyticsRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
+   
   ],
   declarations: [
     AnalyticsMainComponent,

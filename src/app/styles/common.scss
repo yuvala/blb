@@ -2,15 +2,27 @@
 
 //temp
 
+[class$="-container"] ,
+[class$="-container "] {
+ border:1px gray dashed; 
+}
+body {
+  color:white;
+}
+a{
+  color:yellow;
+}
 .app-container {
   border:1px red solid;
   height: 100vh;
-  background-color: #cccccc;
+  background-color: #3f3e3e;
+  // display: flex;
+  // flex-direction: column;
 }
 .main-container {
   border:2px orange solid;
   height: 100%;
-  background-color: #eeeded;
+ // background-color: #eeeded;
 
   display: flex;
   flex-direction: row;
@@ -34,7 +46,7 @@
 
 }
 .analytics-container {
-  border:5px red solid;
+  border:2px red dashed;
   height:100%;
   display: flex;
   flex-direction:column;
@@ -44,9 +56,12 @@
   flex-grow:1;
 }
 .patients-container {
-  border:5px orange solid;
+  border:2px gold dashed;
   height:100%;
   display: flex;
   flex-direction:row;
 }
 //temp
+.d-container {
+  flex-grow:1;
+}

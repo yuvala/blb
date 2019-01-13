@@ -1,4 +1,4 @@
-<div class="dashboard-container" style="border:1px blue solid;">
+<!-- <div class="dashboard-container" style="border:1px blue solid; flex-grow: 1;height: 100%;">
   <p>
     AnalyticsDashboardComponent works!
   </p>
@@ -21,4 +21,8 @@
   </select>
 
   </p>
+</div> -->
+<div class="dashboard-container" style="border:1px blue solid; flex-grow: 1;height: 100%;">
+  <div *ngFor="let hero of heroes" style="border:1px gray solid;height:150px;width:300px;" >obj {{ hero }} </div>
+
 </div>

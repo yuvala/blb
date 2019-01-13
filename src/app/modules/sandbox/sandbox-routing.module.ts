@@ -30,8 +30,17 @@ export const SANDBOX_ROUTES: Routes = [
             component: AnalyticsMainComponent,
             children:[
               {
-                path:'dashboard',
-                component: AnalyticsDashboardComponent
+                path:'dashboard',    
+                children: [
+                  {
+                    path:'',
+                    component: AnalyticsDashboardComponent
+                  }
+                ]
+              },
+              {
+                path:'chart',
+                component: AnalyticsChartsComponent
               },
               {
                 path:'chart',
