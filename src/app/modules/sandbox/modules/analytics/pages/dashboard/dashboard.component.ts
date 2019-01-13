@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,10 @@ import { Component, OnInit } from '@angular/core';
 export class AnalyticsDashboardComponent implements OnInit {
   theme = 'dark';
   heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
-  constructor() { }
+  constructor(private router: Router) {
+  console.log('ddd');
+    this.router;
+  }
 
   ngOnInit() {
   }
