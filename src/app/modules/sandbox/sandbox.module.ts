@@ -8,6 +8,7 @@ import { SharedComponent } from './shared/shared.component';
 import { AsideMenuComponent } from './shared/aside-menu/aside-menu.component';
 import { PatientsComponent } from './modules/patients/patients.component';
 import { ApplicationsComponent } from './modules/applications/applications.component';
+import { MainComponent } from './modules/patients/pages/main/main.component';
 @NgModule({
   imports: [
     SandboxRoutingModule,
@@ -19,7 +20,8 @@ import { ApplicationsComponent } from './modules/applications/applications.compo
     SharedComponent,
     AsideMenuComponent,
     PatientsComponent,
-    ApplicationsComponent],
+    ApplicationsComponent,
+    MainComponent],
   providers: [
     // AnyAuthResolver
   ]
